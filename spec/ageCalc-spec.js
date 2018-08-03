@@ -26,4 +26,8 @@ describe('AgeCalc', function() {
     newage.ageJupiter();
     expect(2.2765598650927488).toEqual(newage.age);
   });
+  it('should find the difference in seconds bewteen 2 dates', function() {
+    let date = new AgeCalc(1,(2018,8,3), (2017,8,3));
+    expect(date.differenceDates()).toEqual(31536000);
+  });
 });
