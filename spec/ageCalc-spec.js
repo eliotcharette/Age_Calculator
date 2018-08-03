@@ -9,11 +9,16 @@ describe('AgeCalc', function() {
   it('should return users age on mercury', function() {
     let newage = new AgeCalc(27);
     newage.ageMercury();
-    expect(6.4799999999999995).toEqual(newage.age);
+    expect(112.5).toEqual(newage.age);
   });
-  it('should return users age on mercury', function() {
+  it('should return users age on venus', function() {
     let newage = new AgeCalc(27);
     newage.ageVenus();
-    expect(16.74).toEqual(newage.age);
+    expect(43.54838709677419).toEqual(newage.age);
+  });
+  it('should return users age on mars', function() {
+    let newage = new AgeCalc(27);
+    newage.ageMars();
+    expect(14.361702127659575).toEqual(newage.age);
   });
 });
