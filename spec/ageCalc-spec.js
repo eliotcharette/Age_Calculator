@@ -13,7 +13,7 @@ describe('AgeCalc', function() {
   });
   it('should return users age on mercury', function() {
     let newage = new AgeCalc(27);
-    newage.ageMercury();
-    expect(6.4799999999999995).toEqual(newage.age);
+    newage.ageVenus();
+    expect(16.74).toEqual(newage.age);
   });
 });
