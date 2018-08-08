@@ -37,4 +37,9 @@ describe('AgeCalc', function() {
     let average = 82;
     expect(newage.yearsLeftMercury(average)).toEqual(229.16666666666669);
   });
+  it('should return users years left to live on venus', function() {
+    let newage = new AgeCalc(27);
+    let average = 82;
+    expect(newage.yearsLeftVenus(average)).toEqual(88.70967741935483);
+  });
 });
