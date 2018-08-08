@@ -42,4 +42,9 @@ describe('AgeCalc', function() {
     let average = 82;
     expect(newage.yearsLeftVenus(average)).toEqual(88.70967741935483);
   });
+  it('should return users years left to live on Mars', function() {
+    let newage = new AgeCalc(27);
+    let average = 82;
+    expect(newage.yearsLeftMars(average)).toEqual(29.25531914893617);
+  });
 });

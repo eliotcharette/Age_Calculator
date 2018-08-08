@@ -28,10 +28,10 @@ export class AgeCalc {
   yearsLeftVenus(averageCan){
     return (averageCan - this.age)/.62;
   }
-  yearsLeftMercury(averageCan){
-    return (averageCan - this.age)/.24;
+  yearsLeftMars(averageCan){
+    return (averageCan - this.age)/1.88;
   }
-  yearsLeftMercury(averageCan){
-    return (averageCan - this.age)/.24;
-  }
+  // yearsLeftMercury(averageCan){
+  //   return (averageCan - this.age)/1.88;
+  // }
 }
