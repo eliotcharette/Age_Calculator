@@ -52,4 +52,9 @@ describe('AgeCalc', function() {
     let average3 = 82;
     expect(newage.yearsLeftJupiter(average3)).toEqual(4.63743676222597);
   });
+  it('should return the amount of years user have lived past average life expectency', function() {
+    let newage = new AgeCalc(95);
+    let avg = 82;
+    expect(newage.yearsPast(avg)).toEqual(13);
+  });
 });

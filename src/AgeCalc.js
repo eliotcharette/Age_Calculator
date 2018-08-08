@@ -33,4 +33,7 @@ export class AgeCalc {
   yearsLeftJupiter(averageCan){
     return (averageCan - this.age)/11.86;
   }
+  yearsPast(avg){
+    return (this.age - avg);
+  }
 }
