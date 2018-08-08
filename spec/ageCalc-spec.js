@@ -21,7 +21,7 @@ describe('AgeCalc', function() {
     newage.ageMars();
     expect(14.361702127659575).toEqual(newage.age);
   });
-  it('should return users age on mars', function() {
+  it('should return users age on Jupiter', function() {
     let newage = new AgeCalc(27);
     newage.ageJupiter();
     expect(2.2765598650927488).toEqual(newage.age);
@@ -39,12 +39,17 @@ describe('AgeCalc', function() {
   });
   it('should return users years left to live on venus', function() {
     let newage = new AgeCalc(27);
-    let average = 82;
-    expect(newage.yearsLeftVenus(average)).toEqual(88.70967741935483);
+    let average1 = 82;
+    expect(newage.yearsLeftVenus(average1)).toEqual(88.70967741935483);
   });
   it('should return users years left to live on Mars', function() {
     let newage = new AgeCalc(27);
-    let average = 82;
-    expect(newage.yearsLeftMars(average)).toEqual(29.25531914893617);
+    let average2 = 82;
+    expect(newage.yearsLeftMars(average2)).toEqual(29.25531914893617);
+  });
+  it('should return users years left to live on Jupiter', function() {
+    let newage = new AgeCalc(27);
+    let average3 = 82;
+    expect(newage.yearsLeftJupiter(average3)).toEqual(4.63743676222597);
   });
 });

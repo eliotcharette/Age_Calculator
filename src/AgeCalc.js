@@ -2,7 +2,6 @@ export class AgeCalc {
   constructor(age, date){
     this.age = age;
     this.date = date;
-
   }
   ageInSeconds(){
     this.age = this.age * 31536000;
@@ -31,7 +30,7 @@ export class AgeCalc {
   yearsLeftMars(averageCan){
     return (averageCan - this.age)/1.88;
   }
-  // yearsLeftMercury(averageCan){
-  //   return (averageCan - this.age)/1.88;
-  // }
+  yearsLeftJupiter(averageCan){
+    return (averageCan - this.age)/11.86;
+  }
 }
