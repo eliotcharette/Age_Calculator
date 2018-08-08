@@ -1,8 +1,7 @@
 export class AgeCalc {
-  constructor(age, date, date2){
+  constructor(age, date){
     this.age = age;
-    this.date = new Date(date);
-    this.date = new Date(date2);
+    this.date = date;
 
   }
   ageInSeconds(){
@@ -27,12 +26,7 @@ export class AgeCalc {
   ageJupiter(){
     this.age = this.age / 11.86;
   }
-  differenceDates(){
-    let start = this.date;
-    let end = this.date2;
-
-    let difference = end - start;
-    console.log(difference)
-    return difference;
+  differenceDates(now, then){
+    return(now - then)/1000;
   }
 }
