@@ -32,4 +32,9 @@ describe('AgeCalc', function() {
     let lastYear = new Date(2017, 8, 3, 10, 10, 10);
     expect(newage.differenceDates(today, lastYear)).toEqual(31536000);
   });
+  it('should return users years left to live on mercury', function() {
+    let newage = new AgeCalc(27);
+    let average = 82;
+    expect(newage.yearsLeftMercury(average)).toEqual(229.16666666666669);
+  });
 });
